@@ -17,9 +17,9 @@ async fn main() -> Result<()> {
     tracing_subscriber::fmt::init();
 
     // Ethers-rs part for interacting with the contract
-    let provider = Provider::<Http>::try_from("https://mainnet.infura.io/v3/6ffbbaba936b4bec8e9672261ae1e797").unwrap();
+    let provider = Provider::<Http>::try_from("https://mainnet.infura.io/v3/API-KEY").unwrap();
     let counter_address: Address =
-        String::from("0x760f270f75b62ce2213ca982d89538b12574a547").parse()?;
+        String::from("CONTRACT-ADRESS").parse()?;
     let counter = Counter::new(counter_address, Arc::new(provider));
     match counter.get_number().await {
         Ok(number) => println!("The number is: {}", number),
