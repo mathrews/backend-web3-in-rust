@@ -4,3 +4,11 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+axum = "0.7.5"
+axum-macros = "0.4.1"
+ethers = {version = "2.0.14", features = ["rustls"]}
+eyre = "0.6.12"
+thiserror = "1.0.61"
+tokio = {version = "1.38.0", features=["full"]}
+tracing = "0.1.40"
+tracing-subscriber = "0.3.18"

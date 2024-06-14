@@ -2,6 +2,3 @@
 src = "src"
 out = "out"
 libs = ["lib"]
-
-[etherscan]
-api_key = "8PEPSEGCCZ9BZ95AWQWF4YEPVEDFP3IPWB"
